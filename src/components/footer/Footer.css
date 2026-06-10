@@ -1,0 +1,88 @@
+.container{
+    background: var(--secondary);
+    color: var(--primary);
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.footer__title{
+    margin: 0 0 1rem;
+    font-size: 2rem;
+}
+
+.footer__copy{
+    margin-top: 2rem;
+    font-size: .9rem;
+    opacity: .8;
+}
+
+.footer__icons{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+/* Aplica a TODOS los iconos */
+.footer__icons a{
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    background: rgba(0, 0, 0, .15);
+    color: var(--primary);
+    font-size: 1.2rem;
+    transition: transform .3s ease, background .3s ease;
+}
+
+.footer__icons a:hover{
+    transform: translateY(-3px);
+    background: rgba(0, 0, 0, .3);
+}
+
+.footer__img{
+    display: none;
+}
+
+@media(width >= 768px){
+
+    .container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+        padding: 5rem 2rem;
+    }
+
+    .footer,
+    .footer__img{
+        width: 50%;
+    }
+
+    .footer{
+        text-align: left;
+    }
+
+    .footer__title{
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .footer__icons{
+        justify-content: flex-start;
+    }
+
+    .footer__img{
+        display: block;
+        margin: 0;
+    }
+
+    .footer__picture{
+        width: 100%;
+        max-height: 22rem;
+        object-fit: contain;
+    }
+}

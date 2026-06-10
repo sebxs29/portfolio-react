@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Variables */
+:root{
+    /* Colores principales */
+    --primary: #ffffff;
+
+    /* Azul principal del portfolio */
+    --secondary: #1A2E66;
+    --secondary-light: #2E4A99;
+    --secondary-dark: #101E45;
+
+    /* Fondos */
+    --portfolio: #F8FAFC;
+    --surface: #FFFFFF;
+
+    /* Texto */
+    --text-dark: #111827;
+    --text-light: #6B7280;
+
+    /* Sombras */
+    --shadow: 0 10px 30px rgba(26, 46, 102, .15);
+}
+
+/* Global styles */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/* HTML */
+html{
+    scroll-behavior: smooth;
+}
+
+/* Body */
+body{
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+
+    color: var(--text-dark);
+    background: var(--portfolio);
+
+    overflow-x: hidden;
+
+}
+
+/* Images */
+img{
+    max-width: 100%;
+    display: block;
+}
+
+/* Buttons */
+.btn{
+    display: block;
+    width: fit-content;
+
+    font-size: .95rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 1px;
+
+    padding: .9rem 2rem;
+
+    border-radius: 999px;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .2s ease,
+        box-shadow .3s ease;
+}
+
+.btn__light{
+    margin: 0 auto;
+
+    background: var(--secondary);
+    color: var(--primary);
+
+    border: 2px solid transparent;
+
+    box-shadow: var(--shadow);
+}
+
+.btn__light:hover{
+    background: var(--secondary-light);
+
+    transform: translateY(-3px);
+
+    box-shadow:
+        0 15px 35px rgba(26, 46, 102, .25);
+}
+
+.btn__light:active{
+    transform: translateY(0);
+}
