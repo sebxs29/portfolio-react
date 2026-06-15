@@ -1,16 +1,19 @@
-import Header from "./components/header/Header"
-import About from "./components/about/About"
-import Project from "./components/project/Project"
-import Footer from "./components/footer/Footer"
+import { Route, Routes } from "react-router"
+import Landing from "./pages/Landing"
+import Login from "./pages/Login"
+import Register from "./pages/Register"
+import Dashboard from "./pages/Dashboard"
+import NotFound from "./pages/NotFound"
 
 const App = () => {
   return (
-    <>
-    <Header/>
-    <About/>
-    <Project/>
-    <Footer/>
-    </>
+    <Routes>
+      <Route path="/" element={<Landing/>}></Route>
+      <Route path="/login" element={<Login/>}></Route>
+      <Route path="/register" element={<Register/>}></Route>
+      <Route path="/dashborad" element={<Dashboard/>}></Route>
+      <Route path="*" element={<NotFound></NotFound>}></Route>
+    </Routes>
   )
 }
 

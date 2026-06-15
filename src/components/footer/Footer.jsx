@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="footer__icons">
 
                     <a
-                        href="mailto:Sebas29t@gmail.com"
+                        href="mailto:juan.toapanta01@epn.edu.ec"
                         className="fa-solid fa-envelope"
                         aria-label="Email"
                     ></a>
